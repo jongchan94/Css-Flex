@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="default.css">
+	<style>
+		/*유연한 박스의 기본영역 flex-basis
+		  flex 아이템의 기본 크기를 설정한다 (flex-direction이 row일 때는 너비)
+		  							  (flex-column 일 때는 높이)
+		*/
+
+		/*
+			flex-glow는 아이템들의 flex-basis를 제외한 여백 부분을 flex-grow에
+			숫자의 비율로 나누어 가진다.
+			(내용물 빼고 여백의 비율)
+		*/
+		.flex-container {
+			display: flex;
+		}
+		.flex-item {
+			flex-grow: 1;
+		}
+		.flex-item:nth-child(2) {
+			flex-grow: 2;
+		}
+	</style>
+</head>
+<body> 
+	<div class="flex-container">
+		<div class="flex-item">AAAAAAAAAA</div>
+		<div class="flex-item">BB</div>
+		<div class="flex-item">CCCCCC</div>
+	</div>
+</body>
+</html>
