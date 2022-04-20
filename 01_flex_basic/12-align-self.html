@@ -7,15 +7,24 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<style>
+		/*개별 정렬
+		align이니 수직축 정렬
+		align-items의 아이템 버전이다
+		align-items가 전체 아이템의 수직축 방향 정렬이라면,
+		align-self는 해당 아이템의 수직축 방향 정렬
+
+		기본값은 auto
+		
+		*/
 		.flex-container {
 			display: flex;
 			height: 100vh;
 			align-items: center;
 		}
 		.flex-item:nth-child(2) {
+			align-self: stretch;
 			/* align-self: auto; */
 			/* align-self: stretch; */
-			align-self: flex-start;
 			/* align-self: flex-end; */
 			/* align-self: center; */
 			/* align-self: baseline; */

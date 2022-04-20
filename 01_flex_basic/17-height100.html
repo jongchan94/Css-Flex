@@ -7,13 +7,15 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<style>
+		/*풋터를 바닥에 붙이기*/
 		.page {
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh;
 		}
-		.content {
+		.content{
 			flex: 1 auto;
+			/*grow 가 늘어나고 싶어도 늘어날 자리가 없어서 높이설정을 해야한다*/
 			padding: 1.5rem;
 		}
 	</style>

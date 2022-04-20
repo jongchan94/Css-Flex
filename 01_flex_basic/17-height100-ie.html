@@ -7,10 +7,12 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<style>
+		/*ie버그 11버전*/
 		.page {
 			display: flex;
 			flex-direction: column;
 			height: 100vh;
+			/*min-height가 ie에선 잘 안됌 height를 써주어야함*/
 		}
 		.content {
 			overflow: auto;
