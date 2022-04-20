@@ -11,25 +11,31 @@
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh;
-			/* border: 10px solid red; */
 		}
-		.flex-item {
+		
+		.flex-item{
 			flex: 1 auto;
 		}
-		@media (min-width: 600px) {
-			.flex-container {
-				flex-direction: row;
-				flex-wrap: wrap;
+		
+		@media (min-width:600px){
+			/*2단 컬럼*/
+			.flex-container{
+
+			flex-direction: row;
+			flex-wrap: wrap;
+
 			}
-			.flex-item {
-				width: 50%;
-				/* flex-grow: 0; */
-				/* flex: 0 auto; */
-				/* flex-basis: 50%; */
-			}
+
+			.flex-item{
+				/*기본 값은 auto*/
+			width: 50%;
+			/*flex-grow: 0;*/
 		}
-		@media (min-width: 900px) {
-			.flex-item {
+		}
+
+		@media (min-width:1000px){
+
+			.flex-item{
 				width: 30%;
 			}
 		}
@@ -46,6 +52,7 @@
 		<div class="flex-item">AAAAAAAAAA</div>
 		<div class="flex-item">BB</div>
 		<div class="flex-item">CCCCCC</div>
+		
 	</div>
 </body>
 </html>
