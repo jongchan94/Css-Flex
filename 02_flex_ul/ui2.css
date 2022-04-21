@@ -1,0 +1,31 @@
+
+/*menu*/
+
+.menu{
+    display: flex;
+
+}
+
+.menu-item{
+    background-color: gold;
+    width: 25%;
+    transition: 0.5s;
+}
+
+.menu-item:hover{
+    width: 35%;
+    background-color: red;
+}
+.menu-link{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.menu-link:hover{
+    color: white;
+    
+}
