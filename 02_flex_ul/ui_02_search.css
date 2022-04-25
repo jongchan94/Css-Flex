@@ -1,0 +1,23 @@
+
+.search_form{
+    display: flex;
+    height: 40px;
+}
+
+
+
+.search_form input[type="search"]{
+    flex: 1;
+    border:0;
+    border-radius: 0.3em;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.search_form input[type="submit"]{
+    border: 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    background-color: gold;
+    width: 4em;
+}
