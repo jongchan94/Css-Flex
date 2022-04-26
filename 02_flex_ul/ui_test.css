@@ -3,7 +3,7 @@
 .menu{
     display: flex;
 }
-.menu-item {
+.menu_item {
     /*width를 설정하던지 grow를 0보다 크게주던지*/
     /*flex-grow: 1;*/
     width: 25%;
@@ -11,21 +11,20 @@
     transition: 0.5s;
 }
 
-.menu-item:hover {
+.menu_item:hover {
     background-color: red;
     width: 35%;
 }
-.menu-link{
+.menu_link{
     font-weight: bold;
     font-size: 1.2rem;
     padding: 1em;
     display: block;
     text-decoration: none;
     text-align: center;
-    color: red;
 }
 
-.menu-link:hover{
+.menu_link:hover{
     color: white ;
 }
 
@@ -39,7 +38,7 @@
 
 .search_form input[type="search"]{
     border: 0;
-    border-radius: 0.3em;
+    border-radius: 0.1em;
     margin: 10px 0;
     flex: 1;
 

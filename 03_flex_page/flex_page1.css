@@ -1,0 +1,109 @@
+/*hader*/
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1rem;
+}
+/*
+.search_form{
+    margin-left: auto;
+    전체를 다 소비해서 오토로 붙임
+    다른요소들이 더 있어서 그룹지어서 움직여서 하나만 떨어지고 그러면 마진오토가 좋음
+    균일하게 나눠가면 스페이스비트윈
+}
+*/
+
+.search_form{
+    width: 300px;
+    max-width: 60%;
+}
+
+/*card list*/
+
+.card_list{
+    padding: 1rem
+}
+
+.bullet_list{
+    background: white;
+    padding: 1rem;
+}
+
+.massage_list{
+    color: white;
+    background: #666;
+    padding-top: 0.5rem;
+}
+
+
+
+.iufo_list{
+    margin-bottom: 2rem;
+}
+
+.info_list2{
+    margin-bottom: 2rem;
+}
+.footer{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2px;
+}
+
+#moadl_switch{
+    font-size: 2rem;
+}
+
+
+@media (min-width: 1024px){
+    .page{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header{
+        width: 100%;
+    }
+    
+    .menu{
+        width: 100%;
+    }
+
+
+    .card{
+        width: 60%;
+        order: 2;
+    }
+
+    .bullet_list{
+        width: 20%;
+        order: 1;
+    }
+
+    .massage_list{
+        width: 20%;
+        order: 3;
+    }
+
+    .footer{
+        order: 4;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1400px){
+    .card{
+        width: calc(100% - 600px);
+        margin: 0 -1rem;
+
+    }
+
+    .massage_list{
+        width: 300px;
+    }
+
+}
